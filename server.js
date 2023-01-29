@@ -40,7 +40,7 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
 // 2. set a header with content type `text/html`, and 
 // 3. end with the data that you are reading in from ./public/index.html.
 
-const server = http.createServer(function(req, rs) {
+const server = http.createServer(function(req, res) {
 	res.statusCode = 200;
 	res.setHeader('Content-Type', 'text/html');
 	res.end(hold);
